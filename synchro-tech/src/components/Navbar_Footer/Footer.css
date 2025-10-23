@@ -1,0 +1,59 @@
+/* Footer.css */
+
+.footer {
+  background: linear-gradient(135deg, rgba(0, 1, 61, 0.788)0%, rgb(0, 1, 61) 100%);
+  color: #e2e8f0;
+  padding: 1.5rem 0; /* reduced height for a more natural look */
+  margin-top: auto;
+  text-align: center; /* centers content horizontally */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  padding: 0; /* removed extra padding */
+}
+
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 0 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .logo-icon {
+    font-size: 1.75rem;
+  }
+
+  .footer-content {
+    gap: 2rem;
+  }
+}
