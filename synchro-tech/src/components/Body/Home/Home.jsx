@@ -39,7 +39,7 @@ const Home = () => {
    <section className="hero" id="home">
         <div className="hero-content">
           <h1 className="hero-title">
-  <span className="white-text">Hello! We are</span> SynchroTech IT Solutions
+  <span className="white-text">Helloerr! We are</span> SynchroTech IT Solutions
 </h1>
           <p className="hero-description">
             {displayedText}<span className="cursor">|</span>
