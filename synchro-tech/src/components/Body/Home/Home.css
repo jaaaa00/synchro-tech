@@ -144,11 +144,21 @@
   border-radius: 50%;
   background-color: white;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    -2px -2px 4px rgba(255, 255, 255, 0.7);
 }
 
 .logo-circle:hover {
   transform: scale(1.1);
+  box-shadow: 
+    inset 6px 6px 10px rgba(0, 0, 0, 0.25),
+    inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+    3px 3px 6px rgba(0, 0, 0, 0.15),
+    -3px -3px 6px rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {
@@ -160,16 +170,26 @@
     font-size: 1rem;
   }
 
-  .logo-circle {
+ .logo-circle {
     width: 60px;
     height: 60px;
+    box-shadow: 
+      inset 3px 3px 6px rgba(0, 0, 0, 0.2),
+      inset -3px -3px 6px rgba(255, 255, 255, 0.9),
+      1px 1px 3px rgba(0, 0, 0, 0.1),
+      -1px -1px 3px rgba(255, 255, 255, 0.7);
   }
 }
 
 @media (max-width: 480px) {
-  .logo-circle {
+.logo-circle {
     width: 50px;
     height: 50px;
+    box-shadow: 
+      inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+      inset -2px -2px 5px rgba(255, 255, 255, 0.9),
+      1px 1px 2px rgba(0, 0, 0, 0.1),
+      -1px -1px 2px rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -653,19 +673,32 @@ opacity: 0;
     width: 100%;
     min-width: auto;
   }
-
+ 
   .btn-email {
     width: 100%;
   }
 
   .about-grid {
-    grid-template-columns: 1fr;
+   grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .divider {
     width: 100%;
     height: 2px;
   }
+
+  .team-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-text p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
 }
 
 @media (max-width: 480px) {

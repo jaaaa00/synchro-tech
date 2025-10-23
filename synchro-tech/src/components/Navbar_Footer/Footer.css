@@ -28,13 +28,13 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 0 0;
+    padding: 0.1rem 0 0;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 
   

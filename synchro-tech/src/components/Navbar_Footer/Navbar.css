@@ -149,14 +149,14 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 80px;
     flex-direction: column;
-    background: rgba(10, 25, 41, 0.98);
+    background: rgba(11, 0, 70, 0.884);
     width: 100%;
     text-align: center;
     transition: left 0.3s ease;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
-    padding: 2rem 0;
+    box-shadow: 0 10px 27px rgba(202, 82, 82, 0.3);
+    padding: 0.2rem 0;
     gap: 0;
   }
 

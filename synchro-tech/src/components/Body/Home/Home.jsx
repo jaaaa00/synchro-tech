@@ -17,7 +17,7 @@ import Project3 from '../../Sync_Files/Project 3.jpg';
 
 const Home = () => {
   const [displayedText, setDisplayedText] = React.useState('');
-  const fullText = "Specializing in Web Development. We design and deliver intelligent digital solutions that streamline workflows and elevate user experiences.";
+  const fullText = "Specializing in Web Development, we craft and deliver smart digital solutions that optimize workflows and enhance user experiences.";
   
   React.useEffect(() => {
     let index = 0;
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* About Us Section */}
 <section className="about-us" id="about">
       <div className="container">
         <h2 className="section-title">About Us</h2>
@@ -69,7 +69,7 @@ const Home = () => {
             <h3>Charles</h3>
             <p>Fullstack Developer</p>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/charles.dimalanta.33" target="_blank" rel="noopener noreferrer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="social-icon" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -83,10 +83,10 @@ const Home = () => {
             <h3>John Axel</h3>
             <p>Frontend Developer</p>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/axelramirez44/" target="_blank" rel="noopener noreferrer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="social-icon" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/john-axel-ramirez-6151a4254/" target="_blank" rel="noopener noreferrer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="social-icon" />
               </a>
             </div>
@@ -183,11 +183,23 @@ const Home = () => {
           </div>
           <div className="contact-text">
             <h3>Email</h3>
-            <p>synchrotech@gmail.com</p>
+            <p>synchrotechitsolutions@gmail.com</p>
           </div>
         </div>
       </div>
-      <button className="btn-email">Send an Email</button>
+<button
+  className="btn-email"
+  onClick={() =>
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=synchrotechitsolutions@gmail.com",
+      "_blank"
+    )
+  }
+>
+  Send an Email
+</button>
+
+
     </div>
   </div>
 </section>
