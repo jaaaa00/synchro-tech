@@ -9,9 +9,11 @@ import GithubLogo from "../../Sync_Files/GithubLogo.png";
 import VercelLogo from "../../Sync_Files/VercelLogo.png";
 import CharlesPic from '../../Sync_Files/CharlesPic.jpg';
 import JohnAxelPic from '../../Sync_Files/JohnAxelPic.jpg';
-import Project1 from '../../Sync_Files/AboutSikat.jpg';
-import Project2 from '../../Sync_Files/Project1.png';
-import Project3 from '../../Sync_Files/Project 3.jpg';
+import Project1 from '../../Sync_Files/RunikConquests.png';
+import Project2 from '../../Sync_Files/AboutSikat.jpg';
+import Project3 from '../../Sync_Files/SCSA.png';
+import Project4 from '../../Sync_Files/Samal.jpg';
+import { ExternalLink } from 'lucide-react';
 
 
 
@@ -66,7 +68,7 @@ const Home = () => {
         <div className="about-grid">
           <div className="team-member">
             <img src={CharlesPic} alt="Charles" className="team-img" />
-            <h3>Charles</h3>
+      <h3>Charles<br />Dimalanta</h3>
             <p>Fullstack Developer</p>
             <div className="social-links">
               <a href="https://www.facebook.com/charles.dimalanta.33" target="_blank" rel="noopener noreferrer">
@@ -80,7 +82,7 @@ const Home = () => {
           <div className="divider"></div>
           <div className="team-member">
             <img src={JohnAxelPic} alt="John Axel" className="team-img" />
-            <h3>John Axel</h3>
+          <h3>John Axel<br />Ramirez</h3>
             <p>Frontend Developer</p>
             <div className="social-links">
               <a href="https://www.facebook.com/axelramirez44/" target="_blank" rel="noopener noreferrer">
@@ -105,16 +107,25 @@ const Home = () => {
                 <img src={Project1} alt="Project 1" />
               </div>
               <div className="project-content">
-                <h3 className="project-title">BPSU Sikat TBI Website</h3>
+                <h3 className="project-title">RUNIK Conquests</h3>
                 <p className="project-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  RUNIK Conquest is a blockchain-strategy game built on the Hive network where players construct cities, harvest resources, upgrade buildings, form alliances, and engage in territorial conquest to earn digital rewards and dominate the game map.
                 </p>
                 <div className="project-tags">
-                  <span className="tag">HTML</span>
+                  <span className="tag">React</span>
                   <span className="tag">CSS</span>
                   <span className="tag">Visual Studio</span>
                   <span className="tag">Node JS</span>
+                  <span className="tag">Mango DB</span>
                 </div>
+                <a 
+                  href="https://runik-conquests.online/authentication" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <ExternalLink className="project-link-icon" size={20} />
+                </a>
               </div>
             </div>
 
@@ -123,15 +134,24 @@ const Home = () => {
                 <img src={Project2} alt="Project 2" />
               </div>
               <div className="project-content">
-                <h3 className="project-title">Healthcare Management System</h3>
+                <h3 className="project-title">BPSU SIKAT TBI</h3>
                 <p className="project-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 BPSU SIKAT Ventures Portal is a web and mobile system that streamlines startup incubation through registration, SMS notifications, 2D mapping, and milestone tracking for BPSU SIKAT TBI incubatees and investors.
                 </p>
                 <div className="project-tags">
-                  <span className="tag">React</span>
-                  <span className="tag">Node.js</span>
-                  <span className="tag">Visual Studio</span>
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">Javascript</span>
+                  <span className="tag">MySQL</span>
                 </div>
+                <a 
+                  href="https://sikat-ventures.onrender.com/admin_LP" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <ExternalLink className="project-link-icon" size={20} />
+                </a>
               </div>
             </div>
 
@@ -140,17 +160,47 @@ const Home = () => {
                 <img src={Project3} alt="Project 3" />
               </div>
               <div className="project-content">
-                <h3 className="project-title">Financial Dashboard</h3>
+                <h3 className="project-title">SCSA Financial Portal</h3>
                 <p className="project-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+St. Catherine of Siena Academy Financial Portal is an online platform that allows students and parents to manage tuition payments, view financial statements, and access billing information conveniently and securely.
                 </p>
                 <div className="project-tags">
                   <span className="tag">React</span>
                   <span className="tag">Node.js</span>
                   <span className="tag">Visual Studio</span>
                 </div>
+                <a 
+                  href="https://scsa-expensetracker.onrender.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <ExternalLink className="project-link-icon" size={20} />
+                </a>
               </div>
             </div>
+
+    <div className="project-card">
+              <div className="project-image">
+                <img src={Project4} alt="Project 4" />
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Municipality of Samal Website</h3>
+                <p className="project-description">
+                 Municipality of Samal Website provides information about local government services, community updates, tourism attractions, public announcements, and development projects, promoting transparency and engagement among residents and visitors.
+                </p>
+                <div className="project-tags">
+                  <span className="tag">React</span>
+                  <span className="tag">Node.js</span>
+                  <span className="tag">Visual Studio</span>
+                  <span className="tag">Database Management</span>
+                </div>
+                <div className="project-link disabled">
+                  <ExternalLink className="project-link-icon" size={20} />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

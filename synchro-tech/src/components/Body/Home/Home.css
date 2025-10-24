@@ -434,6 +434,9 @@ opacity: 0;
 
 .project-content {
   padding: 2rem;
+  padding-bottom: 4rem; /* Add extra space at bottom for the icon */
+  position: relative;
+  min-height: 280px; /* Ensure consistent height */
 }
 
 .project-title {
@@ -458,6 +461,7 @@ opacity: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  margin-bottom: 0; /* Remove bottom margin */
 }
 
 .tag {
@@ -466,7 +470,7 @@ opacity: 0;
   border: 1.5px solid rgba(32, 2, 114, 0.5);
   border-radius: 20px;
   color: #16014b;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 600;
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
@@ -477,6 +481,36 @@ opacity: 0;
   border-color: rgba(138, 43, 226, 0.8);
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+
+.project-link {
+   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #0026a3;
+  transition: color 0.3s ease;
+  position: absolute;
+  bottom: 1rem; /* Fixed distance from bottom */
+  right: 1rem; /* Fixed distance from right */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.project-link:hover {
+  color: #073c91a6;
+}
+
+.project-link.disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.project-link-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* CTA Section */
