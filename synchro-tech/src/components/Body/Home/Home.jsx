@@ -13,6 +13,7 @@ import Project1 from '../../Sync_Files/RunikConquests.png';
 import Project2 from '../../Sync_Files/AboutSikat.jpg';
 import Project3 from '../../Sync_Files/SCSA.png';
 import Project4 from '../../Sync_Files/Samal.jpg';
+import Project5 from '../../Sync_Files/Bean.png';
 import { ExternalLink } from 'lucide-react';
 
 
@@ -200,6 +201,33 @@ St. Catherine of Siena Academy Financial Portal is an online platform that allow
                 </div>
               </div>
             </div>
+
+              <div className="project-card">
+              <div className="project-image">
+                <img src={Project5} alt="Project 5" />
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Bean Addicted Coffee Website</h3>
+                <p className="project-description">
+Bean Addicted Coffee is a cozy and modern coffee website showcasing premium brews, signature blends, and café experiences. It highlights the brand’s passion for quality coffee, offers event bookings, and connects coffee lovers through engaging content and promotions.
+                </p>
+                <div className="project-tags">
+                  <span className="tag">React</span>
+                  <span className="tag">Node.js</span>
+                  <span className="tag">Visual Studio</span>
+                      <span className="tag">CSS</span>
+                </div>
+                <a 
+                  href="https://bean-addicted.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <ExternalLink className="project-link-icon" size={20} />
+                </a>
+              </div>
+            </div>
+
 
           </div>
         </div>
