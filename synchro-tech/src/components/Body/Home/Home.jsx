@@ -13,7 +13,8 @@ import Project1 from '../../Sync_Files/RunikConquests.png';
 import Project2 from '../../Sync_Files/AboutSikat.jpg';
 import Project3 from '../../Sync_Files/SCSA.png';
 import Project4 from '../../Sync_Files/Samal.jpg';
-import Project5 from '../../Sync_Files/Bean.png';
+import Project5 from '../../Sync_Files/Beanbg1.jpg';
+import Project6 from '../../Sync_Files/trendtothrift.jpg';
 import { ExternalLink } from 'lucide-react';
 
 
@@ -227,9 +228,36 @@ Bean Addicted Coffee is a cozy and modern coffee website showcasing premium brew
                 </a>
               </div>
             </div>
-
+<div className="project-card">
+              <div className="project-image">
+                <img src={Project6} alt="Project 6" />
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Trend To Thrift Website</h3>
+                <p className="project-description">
+                Trend to Thrift is your guide to sustainable style, featuring premium brands alongside recycled, low-cost clothing. Browse curated thrifted picks and eco-friendly alternatives that help you look great while reducing waste and spending less.
+                </p>
+                <div className="project-tags">
+                  <span className="tag">React</span>
+                  <span className="tag">Vite</span>
+                  <span className="tag">Visual Studio</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">HTML</span>
+                </div>
+                 <a 
+                  href="https://trend-to-thrift.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <ExternalLink className="project-link-icon" size={20} />
+                </a>
+              </div>
+            </div>
 
           </div>
+
+          
         </div>
       </section>
 
