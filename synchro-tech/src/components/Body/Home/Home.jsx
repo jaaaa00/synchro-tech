@@ -170,6 +170,7 @@ St. Catherine of Siena Academy Financial Portal is an online platform that allow
                   <span className="tag">React</span>
                   <span className="tag">Node.js</span>
                   <span className="tag">Visual Studio</span>
+                  <span className="tag">Database Management</span>
                 </div>
                 <a 
                   href="https://scsa-expensetracker.onrender.com/" 
